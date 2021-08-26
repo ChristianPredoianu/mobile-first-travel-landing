@@ -1,0 +1,80 @@
+//Flexbox - Mixin
+//-------------------------------------------------------------------
+
+@mixin flex-config(
+  $display: flex,
+  $wrap: false,
+  $direction: false,
+  $justify: false,
+  $align: false
+) {
+  /*  @if $display != false {
+    display: $display;
+  } */
+  display: $display;
+
+  @if $wrap !=false {
+    flex-wrap: $wrap;
+  }
+
+  @if $justify != false {
+    justify-content: $justify;
+  }
+
+  @if $direction != false {
+    flex-direction: $direction;
+  }
+
+  @if $align != false {
+    align-items: $align;
+  }
+}
+
+//-------------------------------------------------------------------//
+
+//Position - Mixin
+//-------------------------------------------------------------------//
+@mixin position(
+  $pos,
+  $top: false,
+  $right: false,
+  $bottom: false,
+  $left: false
+) {
+  position: $pos;
+
+  @if $top != false {
+    top: $top;
+  }
+
+  @if $right != false {
+    right: $right;
+  }
+
+  @if $bottom != false {
+    bottom: $bottom;
+  }
+
+  @if $left !=false {
+    left: $left;
+  }
+}
+
+//-------------------------------------------------------------------//
+
+//Media query manager
+//-------------------------------------------------------------------
+/*0-600px:      Phone
+
+
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == tab-port {
+    @media (min-width: 37.5em) {
+      //600px
+      @content;
+    }
+  }
+}
+//-------------------------------------------------------------------//
