@@ -1,10 +1,10 @@
 @use '../abstracts' as *;
 
-nav {
+.nav {
   @include flex-config($justify: space-between, $align: center);
   @include position($pos: absolute, $top: 0, $left: 0);
   width: 100%;
-  z-index: 10;
+  z-index: 20;
   padding: 0 2rem;
 }
 
@@ -12,7 +12,7 @@ nav {
   width: min(15vw, 10rem);
 }
 
-.nav-links {
+.nav-list {
   @include flex-config(
     $direction: column,
     $justify: space-around,
@@ -36,6 +36,15 @@ nav {
     height: auto;
     background-color: transparent;
     cursor: pointer;
+  }
+
+  &__link {
+    letter-spacing: 0.3rem;
+    transition: color 0.5s ease;
+
+    &:hover {
+      color: rgb(0, 0, 0);
+    }
   }
 }
 

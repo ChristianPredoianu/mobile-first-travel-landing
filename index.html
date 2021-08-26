@@ -24,26 +24,27 @@
   </head>
   <body>
     <header>
-      <div class="video-container">
-        <video
-          muted
-          loop
-          class="hero-video"
-          src="./assets/video/hero-video.mp4"
-        ></video>
-      </div>
-      <nav>
+      <div class="video-overlay"></div>
+      <video
+        autoplay
+        muted
+        loop
+        class="hero-video"
+        src="./assets/video/hero-video.mp4"
+      ></video>
+
+      <nav class="nav">
         <img
           class="logo"
           src="./assets/images/4d83b14deb1e42efb3d7febccef40db2.png"
           alt="Logo"
         />
 
-        <ul class="nav-links" id="nav-links">
-          <li class="nav-links__link">Home</li>
-          <li class="nav-links__link">Tour</li>
-          <li class="nav-links__link">Places</li>
-          <li class="nav-links__link">Contact</li>
+        <ul class="nav-list" id="nav-links">
+          <li class="nav-list__link">Home</li>
+          <li class="nav-list__link">Tour</li>
+          <li class="nav-list__link">Places</li>
+          <li class="nav-list__link">Contact</li>
         </ul>
         <i class="fas fa-bars hamburger" id="hamburger"></i>
         <i class="fas fa-times close-hamburger" id="close-hamburger"></i>
