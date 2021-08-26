@@ -1,0 +1,17 @@
+@use './abstracts/' as *;
+@use './base/' as *;
+@use './components/' as *;
+
+header {
+  background-color: orangered;
+}
+
+.hero-video {
+  position: relative;
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
