@@ -1,24 +1,78 @@
+@use '../abstracts' as *;
+
 nav {
-  position: absolute;
-  top: 0;
-  left: 0;
+  @include flex-config($justify: space-between, $align: center);
+  @include position($pos: absolute, $top: 0, $left: 0);
   width: 100%;
-  display: flex;
-  justify-content: space-between;
   z-index: 10;
-  background-color: aqua;
-  padding: 0 10rem;
+  padding: 0 2rem;
 }
 
 .logo {
-  width: 5%;
+  width: min(15vw, 10rem);
 }
 
 .nav-links {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  @include flex-config(
+    $direction: column,
+    $justify: space-around,
+    $align: center
+  );
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  font-size: clamp(1.5rem, 1.5vw, 1.8rem);
+  background-color: #076eb3;
+  color: #ffffff;
   list-style: none;
-  width: 50%;
-  background-color: red;
+  display: none;
+  animation: fade 0.2s ease;
+
+  @include respond(tab-port) {
+    @include flex-config($direction: row);
+    position: static;
+    width: 50%;
+    height: auto;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+
+.hamburger {
+  @include position($pos: absolute, $top: 35%, $right: 5%);
+  font-size: 2rem;
+  z-index: 50;
+  color: rgb(46, 43, 38);
+  cursor: pointer;
+
+  @include respond(tab-port) {
+    display: none;
+  }
+}
+
+.close-hamburger {
+  @include position($pos: absolute, $top: 35%, $right: 5%);
+  font-size: 2rem;
+  z-index: 50;
+  color: rgb(46, 43, 38);
+  cursor: pointer;
+  display: none;
+
+  @include respond(tab-port) {
+    display: none;
+  }
+}
+
+.open {
+  display: flex;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
