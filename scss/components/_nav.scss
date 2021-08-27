@@ -4,7 +4,7 @@
   @include flex-config($justify: space-between, $align: center);
   @include position($pos: absolute, $top: 0, $left: 0);
   width: 100%;
-  z-index: 20;
+  z-index: 200;
   padding: 0 2rem;
 }
 
@@ -24,12 +24,12 @@
   height: 100vh;
   font-size: clamp(1.5rem, 1.5vw, 1.8rem);
   background-color: #076eb3;
-  color: #ffffff;
+  color: var(--clr-white);
   list-style: none;
   display: none;
   animation: fade 0.2s ease;
 
-  @include respond(tab-port) {
+  @include respond(tab-land) {
     @include flex-config($direction: row);
     position: static;
     width: 50%;
@@ -41,6 +41,7 @@
   &__link {
     letter-spacing: 0.3rem;
     transition: color 0.5s ease;
+    text-transform: uppercase;
 
     &:hover {
       color: rgb(0, 0, 0);
@@ -55,7 +56,7 @@
   color: rgb(46, 43, 38);
   cursor: pointer;
 
-  @include respond(tab-port) {
+  @include respond(tab-land) {
     display: none;
   }
 }
@@ -68,7 +69,7 @@
   cursor: pointer;
   display: none;
 
-  @include respond(tab-port) {
+  @include respond(tab-land) {
     display: none;
   }
 }
