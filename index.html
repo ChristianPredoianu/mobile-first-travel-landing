@@ -23,10 +23,9 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="video-overlay"></div>
       <video
-        autoplay
         muted
         loop
         class="hero-video"
@@ -49,6 +48,25 @@
         <i class="fas fa-bars hamburger" id="hamburger"></i>
         <i class="fas fa-times close-hamburger" id="close-hamburger"></i>
       </nav>
+      <div class="header-container">
+        <div class="cta-container">
+          <h1 class="cta-container__heading-primary">
+            Beautiful Places Of Our Destinations
+          </h1>
+          <h2 class="cta-container__heading-secondary">
+            Plan your next vacation with us
+          </h2>
+          <a class="cta-container__btn" href="#">Destinations</a>
+        </div>
+        <div class="header-card">
+          <p class="header-card__text">View Of Rocky Beach</p>
+          <img
+            class="header-card__img"
+            src="./assets/images/rocky-beach.jpg"
+            alt="Rocky beach"
+          />
+        </div>
+      </div>
     </header>
     <script src="app.js"></script>
   </body>
