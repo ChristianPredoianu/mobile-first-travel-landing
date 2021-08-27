@@ -16,3 +16,19 @@ function toggleMobileMenuIcons(hamburgerDisplay, closeDisplay) {
   hamburger.style.display = hamburgerDisplay;
   closeHamburger.style.display = closeDisplay;
 }
+
+window.addEventListener('resize', () => {
+  autoCloseMobileMenu();
+});
+
+//Close mobile menu on screens larger then 1200 so we can show the icons correctly
+function autoCloseMobileMenu() {
+  if (window.innerWidth >= 1200) {
+    navLinks.classList.remove('open');
+    toggleMobileMenuIcons('none', 'none');
+  } else if (navLinks.classList.contains('open')) {
+    toggleMobileMenuIcons('none', 'block');
+  } else {
+    toggleMobileMenuIcons('block', 'none');
+  }
+}
