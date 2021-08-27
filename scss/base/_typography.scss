@@ -1,3 +1,16 @@
 body {
   font-family: 'Lato', sans-serif, serif;
 }
+
+.cta-container {
+  &__heading-primary {
+    font-size: clamp(2.5rem, 2vw, 5rem);
+  }
+
+  &__heading-secondary {
+    font-size: clamp(1.2rem, 2vw, 2rem);
+    font-weight: normal;
+    color: #b9b8b8;
+    margin: 1rem 0 3rem 0;
+  }
+}
