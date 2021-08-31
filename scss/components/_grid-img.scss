@@ -1,0 +1,33 @@
+.img-grid {
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-box-shadow: 5px 3px 25px -3px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 3px 25px -3px rgba(0, 0, 0, 0.3);
+
+    &--1 {
+      grid-area: img1;
+    }
+
+    &--2 {
+      grid-area: img2;
+    }
+
+    &--3 {
+      grid-area: img3;
+    }
+
+    &--4 {
+      grid-area: img4;
+    }
+
+    &--5 {
+      grid-area: img5;
+    }
+
+    &--6 {
+      grid-area: img6;
+    }
+  }
+}
