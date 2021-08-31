@@ -1,3 +1,5 @@
+@use '../abstracts/' as *;
+
 body {
   font-family: 'Lato', sans-serif, serif;
 }
@@ -10,7 +12,7 @@ body {
   &__heading-secondary {
     font-size: clamp(1.2rem, 2vw, 2rem);
     font-weight: normal;
-    color: #b9b8b8;
+    color: var(--clr-light-gray);
     margin: 1rem 0 3rem 0;
   }
 }
@@ -19,6 +21,14 @@ body {
   font-size: clamp(1.8rem, 2vw, 2.5rem);
   margin: 10rem 0;
   text-align: center;
+}
+
+.destinations {
+  &__heading {
+    font-size: clamp(2rem, 2vw, 3rem);
+    margin: 8rem 0;
+    text-align: center;
+  }
 }
 
 .destinations-text-container {
@@ -32,6 +42,21 @@ body {
     font-size: clamp(1.2rem, 2vw, 2rem);
     color: var(--clr-dark-gray);
     margin-bottom: 5rem;
+    text-align: center;
+  }
+}
+
+.choose-us-card {
+  &__heading {
+    font-size: clamp(3rem, 2vw, 4rem);
+    text-align: center;
+  }
+
+  &__paragraph {
+    font-size: clamp(1.5rem, 1.5vw, 2.5rem);
+    color: var(--clr-dark-gray);
+    margin-top: 1rem;
+    padding: 0 2rem;
     text-align: center;
   }
 }
