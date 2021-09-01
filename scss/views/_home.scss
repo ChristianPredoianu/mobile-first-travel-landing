@@ -135,7 +135,7 @@
     grid-template-areas:
       'img img choose-us choose-us'
       'card1 card2 card3 card4';
-    margin: 10rem auto;
+    margin: 30rem auto 10rem auto;
   }
 
   @include respond(desktop) {
@@ -158,4 +158,9 @@
 .choose-us {
   @include flex-config($direction: column, $justify: center, $align: center);
   grid-area: choose-us;
+}
+
+.reviews {
+  @include flex-config($justify: space-around, $wrap: wrap);
+  padding: 0 2rem;
 }
