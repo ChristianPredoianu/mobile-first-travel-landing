@@ -1,0 +1,97 @@
+@use '../abstracts' as *;
+
+.footer {
+  @include flex-config($direction: column, $align: center);
+  background-color: var(--clr-blue);
+  color: var(--clr-white);
+  padding: 2rem;
+
+  &__logo {
+    width: 15rem;
+
+    @include respond(tab-land) {
+      width: 15rem;
+    }
+  }
+}
+
+.links-container {
+  @include flex-config($direction: column, $align: center);
+  position: relative;
+
+  width: 100%;
+
+  padding: 5rem 1rem;
+
+  @include respond(tab-land) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-bottom: 1px solid var(--clr-white);
+    width: 85%;
+  }
+}
+
+.links {
+  width: 100%;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:not(:first-of-type) {
+    margin: 1rem 0;
+  }
+
+  &__link {
+    width: 30%;
+    color: var(--clr-white);
+    margin-top: 1rem;
+
+    @include respond(tab-land) {
+      width: 50%;
+    }
+
+    &:not(:first-of-type) {
+      margin: 1rem 0;
+    }
+  }
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  padding: 10rem 0;
+
+  @include respond(desktop) {
+    width: 20%;
+  }
+
+  &__copyright {
+    font-size: 1.5rem;
+    margin-top: 5rem;
+    text-align: center;
+  }
+}
+
+.icons-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+
+  &__icon {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}
