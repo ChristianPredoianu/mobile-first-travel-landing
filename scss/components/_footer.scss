@@ -4,94 +4,89 @@
   @include flex-config($direction: column, $align: center);
   background-color: var(--clr-blue);
   color: var(--clr-white);
-  padding: 2rem;
+  padding: 10rem 2rem;
 
   &__logo {
     width: 15rem;
-
-    @include respond(tab-land) {
-      width: 15rem;
-    }
+    margin-bottom: 5rem;
   }
 }
 
 .links-container {
   @include flex-config($direction: column, $align: center);
   position: relative;
-
-  width: 100%;
-
-  padding: 5rem 1rem;
+  width: 50%;
 
   @include respond(tab-land) {
-    flex-direction: row;
-    justify-content: space-around;
+    @include flex-config(
+      $direction: row,
+      $justify: space-around,
+      $align: center
+    );
   }
 
   &::after {
     content: '';
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+    inset: 0 0 -2rem 0;
     border-bottom: 1px solid var(--clr-white);
-    width: 85%;
   }
 }
 
 .links {
-  width: 100%;
-  font-size: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: relative;
+  z-index: 10;
+  font-size: 1.8rem;
+  text-align: center;
+  cursor: pointer;
 
   &:not(:first-of-type) {
-    margin: 1rem 0;
-  }
-
-  &__link {
-    width: 30%;
-    color: var(--clr-white);
     margin-top: 1rem;
 
     @include respond(tab-land) {
-      width: 50%;
+      margin-top: 0;
+    }
+  }
+
+  &__link {
+    width: 100%;
+    color: var(--clr-white);
+    cursor: pointer;
+
+    @include respond(tab-land) {
+      text-align: start;
+      cursor: pointer;
     }
 
     &:not(:first-of-type) {
-      margin: 1rem 0;
+      margin-top: 1rem;
+    }
+
+    &:hover {
+      color: var(--clr-hover);
     }
   }
 }
 
 .social-media {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  width: 50%;
-  padding: 10rem 0;
-
-  @include respond(desktop) {
-    width: 20%;
-  }
+  margin-top: 4rem;
 
   &__copyright {
-    font-size: 1.5rem;
-    margin-top: 5rem;
-    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 2rem;
   }
 }
 
 .icons-container {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
+  @include flex-config($justify: space-around);
 
   &__icon {
     font-size: 2rem;
     cursor: pointer;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--clr-hover);
+    }
   }
 }
