@@ -8,12 +8,16 @@
   padding: 7rem;
   text-align: center;
 
-  @include respond(tab-land) {
-    width: 30%;
+  @include respond(tab-port) {
+    width: 40%;
   }
 
   @include respond(desktop) {
     width: 25%;
+  }
+
+  @include respond(qhd) {
+    padding: 20rem;
   }
 
   &__img {

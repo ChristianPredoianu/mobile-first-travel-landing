@@ -1,5 +1,15 @@
 @use '../abstracts' as *;
 
+/*-------------Spacing for sections------------------*/
+.section {
+  margin: 5rem 0;
+
+  @include respond(tab-land) {
+    margin: 20rem 5rem;
+  }
+}
+/*----------------------------------------------------*/
+
 .header {
   @include respond(tab-land) {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
@@ -88,8 +98,7 @@
   padding: 0 5rem;
 
   @include respond(tab-land) {
-    width: 40%;
-    padding: 0 10rem;
+    width: 50%;
   }
 }
 
@@ -102,17 +111,18 @@
     'img1 img1 img1 img1 img3 img3 img3 img3'
     'img4 img4 img4 img4 img4 img4 img4 img4'
     'img5 img5 img5 img5 img5 img6 img6 img6';
-  padding: 0 3rem;
+  padding: var(--padding-mobile);
 
   @include respond(tab-port) {
     grid: repeat(2, 1fr) / repeat(4, 1fr);
     grid-template-areas:
       'img1 img2 img2 img3'
       'img4 img4 img5 img6';
-    width: 60%;
+    width: 80%;
   }
 
   @include respond(tab-land) {
+    width: 60%;
     grid-gap: 3rem;
   }
 }
@@ -127,15 +137,17 @@
     'card2 '
     'card3 '
     'card4';
-  grid-gap: 0.5rem;
-  padding: 0 2rem;
+  /* grid-gap: 0.5rem; */
+  padding: var(--padding-mobile);
 
   @include respond(tab-land) {
     grid: repeat(2, 1fr) / repeat(4, 1fr);
     grid-template-areas:
       'img img choose-us choose-us'
       'card1 card2 card3 card4';
-    margin: 30rem auto 10rem auto;
+    /*   margin: 10rem auto 5rem auto; */
+
+    /* padding: 10rem 5rem; */
   }
 
   @include respond(desktop) {
@@ -144,7 +156,6 @@
       'card1 img img choose-us choose-us'
       'card2 img img card3 card4';
     grid-gap: 0;
-    width: 90%;
   }
 
   &__img {
@@ -158,9 +169,14 @@
 .choose-us {
   @include flex-config($direction: column, $justify: center, $align: center);
   grid-area: choose-us;
+  border-top: 1px solid var(--clr-black);
+
+  @include respond(tab-land) {
+    border: none;
+  }
 }
 
 .reviews {
   @include flex-config($justify: space-around, $wrap: wrap);
-  padding: 0 2rem;
+  padding: var(--padding-mobile);
 }
