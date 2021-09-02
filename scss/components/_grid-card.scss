@@ -1,9 +1,15 @@
 @use '../abstracts/' as *;
 
 .card {
-  @include flex-config($direction: column, $justify: center);
+  @include flex-config($direction: column, $justify: center, $align: center);
   color: var(--clr-white);
   padding: 4rem;
+  text-align: center;
+
+  @include respond(tab-land) {
+    align-items: flex-start;
+    text-align: start;
+  }
 
   &--1 {
     grid-area: card1;
@@ -17,7 +23,6 @@
   }
 
   &--3 {
-    height: 100%;
     grid-area: card3;
     background-color: var(--clr-black);
   }
@@ -28,7 +33,7 @@
   }
 
   &__icon {
-    font-size: 4rem;
+    font-size: clamp(4rem, 2vw, 5rem);
   }
 
   &__heading {
@@ -37,7 +42,14 @@
   }
 
   &__paragraph {
-    flex: 1;
     font-size: 1.5rem;
+
+    @include respond(tab-land) {
+      flex: 1;
+    }
+
+    @include respond(qhd) {
+      font-size: 2rem;
+    }
   }
 }
