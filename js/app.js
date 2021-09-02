@@ -32,3 +32,13 @@ function autoCloseMobileMenu() {
     toggleMobileMenuIcons('block', 'none');
   }
 }
+
+/* 
+--------------------------------AOS-------------------------------------------------
+*/
+
+AOS.init();
+
+AOS.init({
+  once: true,
+});
