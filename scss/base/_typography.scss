@@ -6,11 +6,11 @@ body {
 
 .cta-container {
   &__heading-primary {
-    font-size: clamp(2.5rem, 2vw, 5rem);
+    font-size: clamp(2.5rem, 2vw, 10rem);
   }
 
   &__heading-secondary {
-    font-size: clamp(1.2rem, 2vw, 2rem);
+    font-size: clamp(1.2rem, 2vw, 2.5rem);
     font-weight: normal;
     color: var(--clr-light-gray);
     margin: 1rem 0 3rem 0;
@@ -18,9 +18,13 @@ body {
 }
 
 .heading-tertiary {
-  font-size: clamp(1.8rem, 2vw, 2.5rem);
-  margin: 10rem 0;
+  font-size: clamp(1.8rem, 2vw, 5rem);
+  margin: 5rem 0 0 0;
   text-align: center;
+
+  @include respond(tab-land) {
+    margin: 20rem 0 0 0;
+  }
 }
 
 .destinations {
@@ -33,13 +37,13 @@ body {
 
 .destinations-text-container {
   &__heading {
-    font-size: clamp(1.5rem, 2vw, 2.5rem);
+    font-size: clamp(1.5rem, 2vw, 3rem);
     margin-bottom: 3rem;
     text-align: center;
   }
 
   &__paragraph {
-    font-size: clamp(1.2rem, 2vw, 2rem);
+    font-size: clamp(1.2rem, 1vw, 3rem);
     color: var(--clr-dark-gray);
     margin-bottom: 5rem;
     text-align: center;
