@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 //Flexbox - Mixin
 //-------------------------------------------------------------------
 
@@ -64,9 +66,9 @@
 
 //Media query manager
 //-------------------------------------------------------------------
-/*0-600px:      Phone
-
-
+/*0-600px: Phone
+600-900px: Tablet-landscape
+1200-: Desktop
 */
 
 @mixin respond($breakpoint) {
@@ -91,9 +93,9 @@
     }
   }
 
-  @if $breakpoint == big-desktop {
-    @media (min-width: 112.5em) {
-      //1800px
+  @if $breakpoint == qhd {
+    @media (min-width: 160em) {
+      //2560px
       @content;
     }
   }
