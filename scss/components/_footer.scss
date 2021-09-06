@@ -9,6 +9,10 @@
   &__logo {
     width: 15rem;
     margin-bottom: 5rem;
+
+    @include respond(qhd) {
+      width: min(15vw, 30rem);
+    }
   }
 }
 
@@ -36,7 +40,7 @@
 .links {
   position: relative;
   z-index: 10;
-  font-size: 1.8rem;
+
   text-align: center;
   cursor: pointer;
 
@@ -51,6 +55,7 @@
   &__link {
     width: 100%;
     color: var(--clr-white);
+    font-size: clamp(1.8rem, 1vw, 4rem);
     cursor: pointer;
 
     @include respond(tab-land) {
@@ -69,21 +74,33 @@
 }
 
 .social-media {
+  @include flex-config($direction: Column, $align: center);
   margin-top: 4rem;
+  width: 50%;
 
   &__copyright {
-    font-size: 1.2rem;
+    font-size: clamp(1.2rem, 1vw, 4rem);
     margin-top: 2rem;
   }
 }
 
 .icons-container {
   @include flex-config($justify: space-around);
+  width: 100%;
+  padding: 2rem 0;
+
+  @include respond(desktop) {
+    width: 20%;
+  }
 
   &__icon {
     font-size: 2rem;
     cursor: pointer;
     transition: color 0.2s ease;
+
+    @include respond(qhd) {
+      font-size: 6rem;
+    }
 
     &:hover {
       color: var(--clr-hover);
