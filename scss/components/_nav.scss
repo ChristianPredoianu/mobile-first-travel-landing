@@ -48,7 +48,7 @@
     text-transform: uppercase;
 
     &:hover {
-      color: rgb(0, 0, 0);
+      color: var(--clr-hover);
     }
   }
 }
@@ -57,7 +57,7 @@
   @include position($pos: absolute, $top: 35%, $right: 5%);
   font-size: 2rem;
   z-index: 50;
-  color: rgb(46, 43, 38);
+  color: var(--clr-black);
   cursor: pointer;
 
   @include respond(tab-land) {
