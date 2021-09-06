@@ -28,13 +28,13 @@
   }
 
   &__name {
-    font-size: clamp(2rem, 2vw, 3rem);
+    font-size: clamp(1.5rem, 1.5vw, 6rem);
     font-weight: bold;
     margin-top: 2rem;
   }
 
   &__review {
-    font-size: clamp(1.8em, 2vw, 2rem);
+    font-size: clamp(1.5rem, 1vw, 4rem);
     margin-top: 3rem;
   }
 }

@@ -1,13 +1,13 @@
 @use '../abstracts' as *;
 
 /*-------------Spacing for sections------------------*/
-.section {
+/* .section {
   margin: 5rem 0;
 
   @include respond(tab-land) {
     margin: 20rem 5rem;
   }
-}
+} */
 /*----------------------------------------------------*/
 
 .header {
@@ -47,13 +47,24 @@
   padding: 5rem 0;
 
   &__btn {
-    font-size: clamp(1.2rem, 2vw, 1.8rem);
+    display: inline-block;
+    font-size: clamp(1.2rem, 1vw, 3rem);
     background-color: #069fe0;
     color: var(--clr-white);
-    padding: 1.5rem 2rem;
+    padding: 2rem;
+    transition: background-color 0.4s ease, color 0.4s ease;
     letter-spacing: 0.2rem;
     text-transform: uppercase;
     border-radius: 0.2rem;
+
+    @include respond(qhd) {
+      padding: 3rem;
+    }
+
+    &:hover {
+      background-color: var(--clr-hover);
+      color: rgb(230, 230, 230);
+    }
   }
 }
 
@@ -76,7 +87,7 @@
 
   &__text {
     width: 60%;
-    font-size: clamp(1rem, 1.5vw, 2rem);
+    font-size: clamp(1rem, 1vw, 3rem);
     text-align: center;
   }
 
@@ -87,47 +98,55 @@
 
 .destinations {
   @include flex-config($direction: column, $align: center);
+  @include spacing-sections;
 
   @include respond(tab-land) {
-    @include flex-config($direction: row);
+    @include flex-config($direction: row, $justify: space-between);
   }
 }
 
 .destinations-text-container {
-  @include flex-config($direction: column, $align: center);
-  padding: 0 5rem;
+  @include flex-config($direction: column, $justify: end);
 
   @include respond(tab-land) {
-    width: 50%;
+    width: 40%;
+  }
+
+  @include respond(qhd) {
+    padding: 0 30rem;
   }
 }
 
 .img-grid {
   display: grid;
-  grid: repeat(4, 1fr) / repeat(8, 1fr);
+  grid: repeat(6, 1fr) / repeat(1, 1fr);
   grid-gap: 1.5rem;
   grid-template-areas:
-    'img1 img1 img1 img1 img2 img2 img2 img2'
-    'img1 img1 img1 img1 img3 img3 img3 img3'
-    'img4 img4 img4 img4 img4 img4 img4 img4'
-    'img5 img5 img5 img5 img5 img6 img6 img6';
-  padding: var(--padding-mobile);
+    'img1 '
+    'img2 '
+    'img3 '
+    'img4 '
+    'img5'
+    'img6';
+
+  margin-top: 5rem;
 
   @include respond(tab-port) {
     grid: repeat(2, 1fr) / repeat(4, 1fr);
     grid-template-areas:
       'img1 img2 img2 img3'
       'img4 img4 img5 img6';
-    width: 80%;
+    width: 50%;
   }
 
   @include respond(tab-land) {
-    width: 60%;
-    grid-gap: 3rem;
+    grid-gap: 1rem;
+    margin-top: 0;
   }
 }
 
 .choose-us-grid {
+  @include spacing-sections;
   display: grid;
   grid: repeat(6, 1fr) / repeat(1, 1fr);
   grid-template-areas:
@@ -137,17 +156,15 @@
     'card2 '
     'card3 '
     'card4';
-  /* grid-gap: 0.5rem; */
+
   padding: var(--padding-mobile);
 
   @include respond(tab-land) {
-    grid: repeat(2, 1fr) / repeat(4, 1fr);
+    grid: repeat(3, 1fr) / repeat(2, 1fr);
     grid-template-areas:
-      'img img choose-us choose-us'
-      'card1 card2 card3 card4';
-    /*   margin: 10rem auto 5rem auto; */
-
-    /* padding: 10rem 5rem; */
+      'img  choose-us '
+      'card1 card3 '
+      'card2 card4';
   }
 
   @include respond(desktop) {
@@ -178,5 +195,5 @@
 
 .reviews {
   @include flex-config($justify: space-around, $wrap: wrap);
-  padding: var(--padding-mobile);
+  @include spacing-sections;
 }

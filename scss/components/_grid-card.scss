@@ -11,6 +11,10 @@
     text-align: start;
   }
 
+  @include respond(qhd) {
+    padding: 10rem;
+  }
+
   &--1 {
     grid-area: card1;
     background-color: var(--clr-blue);
@@ -37,7 +41,7 @@
   }
 
   &__heading {
-    font-size: clamp(2rem, 1.5vw, 10rem);
+    font-size: clamp(2rem, 2vw, 20rem);
     margin: 2rem 0;
   }
 
@@ -49,7 +53,7 @@
     }
 
     @include respond(qhd) {
-      font-size: 2rem;
+      font-size: 3rem;
     }
   }
 }
