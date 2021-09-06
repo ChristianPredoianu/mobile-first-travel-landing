@@ -1,5 +1,17 @@
 @use './variables' as *;
 
+//Spacing - Sections
+//-------------------------------------------------------------------
+@mixin spacing-sections {
+  margin: 5rem 1rem;
+
+  @include respond(tab-land) {
+    margin: 20rem 15rem;
+  }
+}
+
+//-------------------------------------------------------------------//
+
 //Flexbox - Mixin
 //-------------------------------------------------------------------
 
@@ -10,9 +22,6 @@
   $justify: false,
   $align: false
 ) {
-  /*  @if $display != false {
-    display: $display;
-  } */
   display: $display;
 
   @if $wrap !=false {
