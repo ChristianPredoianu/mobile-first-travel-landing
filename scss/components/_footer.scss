@@ -10,7 +10,7 @@
     width: 15rem;
     margin-bottom: 5rem;
 
-    @include respond(qhd) {
+    @include respond(xxl) {
       width: min(15vw, 30rem);
     }
   }
@@ -95,15 +95,9 @@
 
   &__icon {
     font-size: 2rem;
-    cursor: pointer;
-    transition: color 0.2s ease;
 
-    @include respond(qhd) {
+    @include respond(xxl) {
       font-size: 6rem;
-    }
-
-    &:hover {
-      color: var(--clr-hover);
     }
   }
 }

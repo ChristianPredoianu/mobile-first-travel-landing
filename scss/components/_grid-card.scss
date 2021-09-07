@@ -4,14 +4,12 @@
   @include flex-config($direction: column, $justify: center, $align: center);
   color: var(--clr-white);
   padding: 4rem;
-  text-align: center;
 
   @include respond(tab-land) {
     align-items: flex-start;
-    text-align: start;
   }
 
-  @include respond(qhd) {
+  @include respond(xxl) {
     padding: 10rem;
   }
 
@@ -36,12 +34,25 @@
     background-color: var(--clr-blue);
   }
 
+  &--5 {
+    grid-area: card5;
+    background-image: url('../../assets/images/beach2.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: none;
+
+    @include respond(tab-land) {
+      display: block;
+    }
+  }
+
   &__icon {
     font-size: clamp(4rem, 2vw, 5rem);
   }
 
   &__heading {
-    font-size: clamp(2rem, 2vw, 20rem);
+    font-size: clamp(2rem, 1.5vw, 4rem);
     margin: 2rem 0;
   }
 
@@ -52,7 +63,7 @@
       flex: 1;
     }
 
-    @include respond(qhd) {
+    @include respond(xxl) {
       font-size: 3rem;
     }
   }
