@@ -1,0 +1,22 @@
+@use '../abstracts/' as *;
+
+:root {
+  /*----------------------Colors----------------------------*/
+  --clr-white: #ffffff;
+  --clr-light-gray: #b9b8b8;
+  --clr-dark-gray: #757575;
+  --clr-blue: #054c8f;
+  --clr-black: #000000;
+
+  --clr-hover: #5bb5ff;
+
+  /*----------------------Spacings----------------------------*/
+  --section-spacing: 1.5;
+  @include respond(tab-port) {
+    --section-spacing: 12.5rem;
+  }
+
+  @include respond(tab-land) {
+    --section-spacing: 14.5rem;
+  }
+}
