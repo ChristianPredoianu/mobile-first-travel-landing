@@ -27,6 +27,7 @@
     <header class="header">
       <div class="video-overlay"></div>
       <video
+        autoplay
         muted
         loop
         class="hero-video"
@@ -37,10 +38,10 @@
         <img class="logo" src="./assets/images/logo.png" alt="Logo" />
 
         <ul class="nav-list" id="nav-links">
-          <li class="nav-list__link">Home</li>
-          <li class="nav-list__link">Tour</li>
-          <li class="nav-list__link">Places</li>
-          <li class="nav-list__link">Contact</li>
+          <li class="nav-list__link"><a>Home</a></li>
+          <li class="nav-list__link"><a>Tour</a></li>
+          <li class="nav-list__link"><a>Places</a></li>
+          <li class="nav-list__link"><a>Contact</a></li>
         </ul>
         <i class="fas fa-bars hamburger" id="hamburger"></i>
         <i class="fas fa-times close-hamburger" id="close-hamburger"></i>
@@ -70,209 +71,223 @@
         </div>
       </div>
     </header>
-    <h3 class="heading-tertiary">Our Destinations</h3>
-    <section class="destinations">
-      <div class="destinations-text-container">
-        <h4 class="destinations-text-container__heading">
-          Places From Our Destinations
-        </h4>
-        <p class="destinations-text-container__paragraph">
-          We build exclusive tours, classic, themed & branded, and offer a
-          selection of the best travel packages on the market. When we receive
-          requests, we brief the client and based on their desires, we tailor
-          their desires.
-        </p>
-      </div>
-      <div class="img-grid">
-        <img
-          src="./assets/images/beach3.jpg "
-          class="img-grid__img img-grid__img--1"
-          alt="Beach with palmtrees"
-          data-aos="fade-down-right"
-          data-aos-duration="1000"
-          data-aos-easing="ease-out-cubic"
-        />
-        <img
-          src="./assets/images/beach2.jpg"
-          class="img-grid__img img-grid__img--2"
-          alt="White sandy beach"
-          data-aos="fade-down"
-          data-aos-duration="1000"
-          data-aos-delay="200"
-          data-aos-easing="ease-out-cubic"
-        />
-        <img
-          src="./assets/images/beach4.jpg"
-          class="img-grid__img img-grid__img--3"
-          alt="Beach with mountains"
-          data-aos="fade-left"
-          data-aos-duration="1000"
-          data-aos-delay="400"
-          data-aos-easing="ease-out-cubic"
-        />
-        <img
-          src="./assets/images/beach1.jpg"
-          class="img-grid__img img-grid__img--4"
-          alt="Bay beach"
-          data-aos="fade-up-right"
-          data-aos-duration="1000"
-          data-aos-delay="600"
-          data-aos-easing="ease-out-cubic"
-        />
-        <img
-          src="./assets/images/beach5.jpg"
-          class="img-grid__img img-grid__img--5"
-          alt="House by the beach"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="800"
-          data-aos-easing="ease-out-cubic"
-        />
-        <img
-          src="./assets/images/beach6.jpg"
-          class="img-grid__img img-grid__img--6"
-          alt="Palmtrees on white sandy beach"
-          data-aos="fade-up-left"
-          data-aos-duration="1000"
-          data-aos-delay="800"
-          data-aos-easing="ease-out-cubic"
-        />
-      </div>
-    </section>
 
-    <section class="choose-us-grid">
-      <div class="choose-us">
-        <div class="choose-us-card">
-          <h5 class="choose-us-card__heading">Why choose us?</h5>
-          <p class="choose-us-card__paragraph">
-            Everyday we work hard to make our clients happy.
-          </p>
+    <h3 class="heading-tertiary">Our Destinations</h3>
+    <section class="section-destinations">
+      <div class="container">
+        <div class="destinations">
+          <div class="destinations-text-container">
+            <h4 class="destinations-text-container__heading">
+              Places From Our Destinations
+            </h4>
+            <p class="destinations-text-container__paragraph">
+              We build exclusive tours, classic, themed & branded, and offer a
+              selection of the best travel packages on the market. When we
+              receive requests, we brief the client and based on their desires,
+              we tailor their desires.
+            </p>
+          </div>
+          <div class="img-grid">
+            <img
+              src="./assets/images/beach3.jpg "
+              class="img-grid__img img-grid__img--1"
+              alt="Beach with palmtrees"
+              data-aos="fade-down-right"
+              data-aos-duration="1000"
+              data-aos-easing="ease-out-cubic"
+            />
+            <img
+              src="./assets/images/beach2.jpg"
+              class="img-grid__img img-grid__img--2"
+              alt="White sandy beach"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+              data-aos-easing="ease-out-cubic"
+            />
+            <img
+              src="./assets/images/beach4.jpg"
+              class="img-grid__img img-grid__img--3"
+              alt="Beach with mountains"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+              data-aos-easing="ease-out-cubic"
+            />
+            <img
+              src="./assets/images/beach1.jpg"
+              class="img-grid__img img-grid__img--4"
+              alt="Bay beach"
+              data-aos="fade-up-right"
+              data-aos-duration="1000"
+              data-aos-delay="600"
+              data-aos-easing="ease-out-cubic"
+            />
+            <img
+              src="./assets/images/beach5.jpg"
+              class="img-grid__img img-grid__img--5"
+              alt="House by the beach"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="800"
+              data-aos-easing="ease-out-cubic"
+            />
+            <img
+              src="./assets/images/beach6.jpg"
+              class="img-grid__img img-grid__img--6"
+              alt="Palmtrees on white sandy beach"
+              data-aos="fade-up-left"
+              data-aos-duration="1000"
+              data-aos-delay="800"
+              data-aos-easing="ease-out-cubic"
+            />
+          </div>
         </div>
       </div>
-      <img
-        src="./assets/images/mountain.jpg"
-        class="choose-us-grid__img"
-        alt="Man on top of mountain"
-      />
-      <div
-        class="card card--1"
-        data-aos="flip-down"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="1000"
-      >
-        <i class="far fa-clock card__icon"></i>
-        <h5 class="card__heading">Guiding</h5>
-        <p class="card__paragraph">
-          We are a creative group of dedicated professionals and we will bring
-          you to places you may have never been before. We want to inspire and
-          guide you on your journey.
-        </p>
-      </div>
-      <div
-        class="card card--2"
-        data-aos="flip-up"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="1000"
-        data-aos-delay="400"
-      >
-        <i class="fas fa-recycle card__icon"></i>
-        <h5 class="card__heading">Enviroment</h5>
-        <p class="card__paragraph">
-          We are a team of experts and we want to make all our opportunities to
-          be a good team more enjoyable as well as more fun. We do not want to
-          be a party, we want to be a family. We have always taken an active
-          role in keeping the environment and natural resources in the heart of
-          our international business.
-        </p>
-      </div>
-      <div
-        class="card card--3"
-        data-aos="flip-left"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="1000"
-        data-aos-delay="600"
-      >
-        <i class="far fa-calendar-alt card__icon"></i>
-        <h5 class="card__heading">Locations</h5>
-        <p class="card__paragraph">
-          We are a company dedicated to providing a unique experience that you
-          never forget:
-        </p>
-      </div>
-      <div
-        class="card card--4"
-        data-aos="flip-right"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="1000"
-        data-aos-delay="800"
-      >
-        <i class="fas fa-cogs card__icon"></i>
-        <h5 class="card__heading">Customization</h5>
-        <p class="card__paragraph">
-          We take the time to understand you and your needs. If you’re not sure,
-          ask us. We want to make sure we’re in sync with the environment and
-          understanding what you need. We provide a friendly travel agent that
-          will meet you where you are and help you explore the beauty of your
-          location.
-        </p>
+    </section>
+    <h3 class="heading-tertiary">Choose Us</h3>
+    <section class="section-choose-us">
+      <div class="container">
+        <div class="choose-us-grid">
+          <div class="choose-us">
+            <div class="choose-us-card">
+              <h5 class="choose-us-card__heading">Why choose us?</h5>
+              <p class="choose-us-card__paragraph">
+                Everyday we work hard to make our clients happy.
+              </p>
+            </div>
+          </div>
+          <img
+            src="./assets/images/mountain.jpg"
+            class="choose-us-grid__img"
+            alt="Man on top of mountain"
+          />
+          <div
+            class="card card--1"
+            data-aos="flip-down"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000"
+          >
+            <i class="far fa-clock card__icon"></i>
+            <h5 class="card__heading">Guiding</h5>
+            <p class="card__paragraph">
+              We are a creative group of dedicated professionals and we will
+              bring you to places you may have never been before. We want to
+              inspire and guide you on your journey.
+            </p>
+          </div>
+          <div
+            class="card card--2"
+            data-aos="flip-up"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+          >
+            <i class="fas fa-recycle card__icon"></i>
+            <h5 class="card__heading">Enviroment</h5>
+            <p class="card__paragraph">
+              We are a team of experts and we want to make all our opportunities
+              to be a good team more enjoyable as well as more fun. We do not
+              want to be a party, we want to be a family. We have always taken
+              an active role in keeping the environment and natural resources in
+              the heart of our international business.
+            </p>
+          </div>
+          <div
+            class="card card--3"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000"
+            data-aos-delay="600"
+          >
+            <i class="far fa-calendar-alt card__icon"></i>
+            <h5 class="card__heading">Locations</h5>
+            <p class="card__paragraph">
+              We are a company dedicated to providing a unique experience that
+              you never forget:
+            </p>
+          </div>
+          <div
+            class="card card--4"
+            data-aos="flip-right"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000"
+            data-aos-delay="800"
+          >
+            <i class="fas fa-cogs card__icon"></i>
+            <h5 class="card__heading">Customization</h5>
+            <p class="card__paragraph">
+              We take the time to understand you and your needs. If you’re not
+              sure, ask us. We want to make sure we’re in sync with the
+              environment and understanding what you need. We provide a friendly
+              travel agent that will meet you where you are and help you explore
+              the beauty of your location.
+            </p>
+          </div>
+          <div class="card card--5"></div>
+        </div>
       </div>
     </section>
     <h3 class="heading-tertiary">Clients Reviews</h3>
-    <section class="reviews">
-      <div
-        class="review-card"
-        data-aos="fade-up"
-        data-aos-anchor-placement="top-bottom"
-        data-aos-duration="1000"
-      >
-        <img
-          src="./assets/images/daniella.jpg"
-          alt="Reviewer photo"
-          class="review-card__img"
-        />
-        <p class="review-card__name">Daniella</p>
-        <p class="review-card__review">
-          "Travel pro has completely surpassed our expectations. Not able to
-          tell you how happy I am with travel pro."
-        </p>
-      </div>
-      <div
-        class="review-card"
-        data-aos="fade-up"
-        data-aos-anchor-placement="top-bottom"
-        data-aos-duration="1000"
-        data-aos-delay="400"
-      >
-        <img
-          src="./assets/images/matt.jpg"
-          alt="Reviewer photo"
-          class="review-card__img"
-        />
-        <p class="review-card__name">Matt</p>
+    <section class="section-reviews">
+      <div class="container">
+        <div class="reviews">
+          <div
+            class="review-card"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1000"
+          >
+            <img
+              src="./assets/images/daniella.jpg"
+              alt="Reviewer photo"
+              class="review-card__img"
+            />
+            <p class="review-card__name">Daniella</p>
+            <p class="review-card__review">
+              "Travel pro has completely surpassed our expectations. Not able to
+              tell you how happy I am with travel pro."
+            </p>
+          </div>
+          <div
+            class="review-card"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+          >
+            <img
+              src="./assets/images/matt.jpg"
+              alt="Reviewer photo"
+              class="review-card__img"
+            />
+            <p class="review-card__name">Matt</p>
 
-        <p class="review-card__review">
-          "I have gotten at least 50 times the value from travel pro. Wow what
-          great service, I love it! I'm good to go."
-        </p>
-      </div>
-      <div
-        class="review-card"
-        data-aos="fade-up"
-        data-aos-anchor-placement="top-bottom"
-        data-aos-duration="1000"
-        data-aos-delay="800"
-      >
-        <img
-          src="./assets/images/diane.jpg"
-          alt="Reviewer photo"
-          class="review-card__img"
-        />
-        <p class="review-card__name">Diane</p>
-        <p class="review-card__review">
-          "Travel pro is worth much more than I paid. I would be lost without
-          travel pro. Man, this thing is getting better and better as I learn
-          more about it."
-        </p>
+            <p class="review-card__review">
+              "I have gotten at least 50 times the value from travel pro. Wow
+              what great service, I love it! I'm good to go."
+            </p>
+          </div>
+          <div
+            class="review-card"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1000"
+            data-aos-delay="800"
+          >
+            <img
+              src="./assets/images/diane.jpg"
+              alt="Reviewer photo"
+              class="review-card__img"
+            />
+            <p class="review-card__name">Diane</p>
+            <p class="review-card__review">
+              "Travel pro is worth much more than I paid. I would be lost
+              without travel pro. Man, this thing is getting better and better
+              as I learn more about it."
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
