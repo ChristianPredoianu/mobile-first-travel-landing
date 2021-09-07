@@ -1,0 +1,23 @@
+@use '../abstracts' as *;
+
+.container {
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  @include respond(tab-port) {
+    max-width: 600px;
+    padding: 0;
+  }
+
+  @include respond(tab-land) {
+    max-width: 900px;
+  }
+
+  @include respond(desktop) {
+    max-width: 1200px;
+  }
+
+  @include respond(xxl) {
+    max-width: 1920px;
+  }
+}
