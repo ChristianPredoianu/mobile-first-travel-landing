@@ -82,12 +82,9 @@ To get a local copy up and running follow these simple steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/ChristianPredoianu/portfolio-v2.git
+   git clone https://github.com/ChristianPredoianu/mobile-first-travel-landing.git
    ```
-2. Install NPM packages
-   ```sh
-   npm install
-   ``` 
+
 
 
    
@@ -115,7 +112,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Christian Predoianu - [@linkedin](https://se.linkedin.com/in/christian-predoianu-369218157) - christianpredoianu@yahoo.com
 
-Project Link: [https://github.com/ChristianPredoianu/portfolio-v2](https://github.com/ChristianPredoianu/mobile-first-travel-landing)
+Project Link: [https://github.com/ChristianPredoianu/mobile-first-travel-landing](https://github.com/ChristianPredoianu/mobile-first-travel-landing)
 
 
 
