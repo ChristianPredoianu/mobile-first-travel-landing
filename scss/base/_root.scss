@@ -2,6 +2,7 @@
 
 :root {
   /*----------------------Colors----------------------------*/
+
   --clr-white: #ffffff;
   --clr-light-gray: #b9b8b8;
   --clr-dark-gray: #757575;
@@ -11,7 +12,8 @@
   --clr-hover: #5bb5ff;
 
   /*----------------------Spacings----------------------------*/
-  --section-spacing: 1.5;
+
+  --section-spacing: 1.5rem;
   @include respond(tab-port) {
     --section-spacing: 12.5rem;
   }

@@ -104,7 +104,7 @@ a:hover, a:focus {
   --clr-black: #000000;
   --clr-hover: #5bb5ff;
   /*----------------------Spacings----------------------------*/
-  --section-spacing: 1.5;
+  --section-spacing: 1.5rem;
 }
 @media (min-width: 37.5em) {
   :root {
