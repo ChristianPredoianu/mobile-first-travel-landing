@@ -515,7 +515,7 @@ a:hover, a:focus {
 .cta-container__btn {
   display: inline-block;
   font-size: clamp(1.2rem, 1vw, 3rem);
-  background-color: #069fe0;
+  background-color: #006f9e;
   color: var(--clr-white);
   padding: 2rem;
   transition: background-color 0.4s ease, color 0.4s ease;
