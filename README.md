@@ -3,7 +3,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/ChristianPredoianu/mobile-first-travel-landing">
-    <img src="assets/images/beach1.jpg" alt="Logo" width="200" height="160">
+    <img src="assets/images/beach2.jpg" alt="Logo" width="200" height="160">
   </a>
 
   <h3 align="center">Portfolio Christian Predoianu</h3>
