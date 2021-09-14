@@ -6,17 +6,17 @@
     <img src="assets/images/beach2.jpg" alt="Logo" width="200" height="160">
   </a>
 
-  <h3 align="center">Portfolio Christian Predoianu</h3>
+  <h3 align="center">Mobile First - Travel Landing</h3>
  
   <p align="center">
-   My portfolio
+  Mobile First - Travel Landing
     <br />
-    <a href="https://github.com/ChristianPredoianu/portfolio-v2"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/ChristianPredoianu/mobile-first-travel-landing"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://christianpredoianu.com/">View Demo</a>
     ·
-    <a href="https://github.com/ChristianPredoianu/portfolio-v2/issues">Report Bug</a>
+    <a href="https://github.com/ChristianPredoianu/mobile-first-travel-landing/issues">Report Bug</a>
     · 
    
   </p>
@@ -53,7 +53,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-My front end portfolio.
+A mobile first design/code of a fictional travel landing page. 
 
 ### Built With
 
@@ -61,10 +61,8 @@ My front end portfolio.
 * [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [Vanilla Js](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [Sass](https://sass-lang.com/)
-* [Parcel](https://parceljs.org/)
-* [Gsap](https://greensock.com/)
 * [BEM](http://getbem.com/)
-* [Local Storage + Session Storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+
 
 
 
@@ -90,15 +88,7 @@ To get a local copy up and running follow these simple steps.
    ```sh
    npm install
    ``` 
-3. Serve with hot reload at localhost:1234
-   ```sh
-    npm run dev
-   ``` 
-5. Build for production 
-   ```sh
-    npm run build
-   
-   ```
+
 
    
 
@@ -110,10 +100,6 @@ To get a local copy up and running follow these simple steps.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-
-
-1. Choose prefered color mode. Light mode or dark mode.
-2. Navigate.
 
  
 
@@ -129,16 +115,16 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Christian Predoianu - [@linkedin](https://se.linkedin.com/in/christian-predoianu-369218157) - christianpredoianu@yahoo.com
 
-Project Link: [https://github.com/ChristianPredoianu/portfolio-v2](https://github.com/ChristianPredoianu/portfolio-v2)
+Project Link: [https://github.com/ChristianPredoianu/portfolio-v2](https://github.com/ChristianPredoianu/mobile-first-travel-landing)
 
 
 
 <!-- ACKNOWLEDGEMENTS --> 
 ## Acknowledgements
 * [Google Fonts](https://fonts.google.com/)
-* [Swiper.js](https://swiperjs.com/)
+* [Animate On Scroll (AOS)](https://github.com/michalsnik/aos)
 * [Font-Awesome](https://fontawesome.com/)
-* [Typed.js](https://github.com/mattboldt/typed.js/)
+
 
 
 
