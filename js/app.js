@@ -1,6 +1,6 @@
-const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('nav-links');
-const closeHamburger = document.getElementById('close-hamburger');
+const hamburger = document.getElementById('hamburger'),
+  navLinks = document.getElementById('nav-links'),
+  closeHamburger = document.getElementById('close-hamburger');
 
 hamburger.addEventListener('click', () => {
   navLinks.classList.add('open');
