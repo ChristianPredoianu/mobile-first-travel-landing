@@ -1,4 +1,4 @@
-
+    
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -14,7 +14,7 @@
     <a href="https://github.com/ChristianPredoianu/mobile-first-travel-landing"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://christianpredoianu.com/">View Demo</a>
+    <a href="https://mobile-first-travel-landing.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/ChristianPredoianu/mobile-first-travel-landing/issues">Report Bug</a>
     · 
