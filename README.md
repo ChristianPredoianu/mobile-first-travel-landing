@@ -1,7 +1,7 @@
     
 <!-- PROJECT LOGO -->
 <br />
-<p align="center">
+<p align="center"> 
   <a href="https://github.com/ChristianPredoianu/mobile-first-travel-landing">
     <img src="assets/images/beach2.jpg" alt="Logo" width="200" height="160">
   </a>
