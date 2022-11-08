@@ -58,6 +58,7 @@ A mobile first design/code of a fictional travel landing page.
 * [Vanilla Js](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [Sass](https://sass-lang.com/)
 * [BEM](http://getbem.com/)
+* [Animate On Scroll (AOS)](https://github.com/michalsnik/aos)
 
 
 
@@ -87,7 +88,6 @@ To get a local copy up and running follow these simple steps.
 Navigate around the landing page.
  
 
-
 <!-- LICENSE -->
 ## License
 
@@ -106,6 +106,5 @@ Project Link: [https://github.com/ChristianPredoianu/mobile-first-travel-landing
 <!-- ACKNOWLEDGEMENTS --> 
 ## Acknowledgements
 * [Google Fonts](https://fonts.google.com/)
-* [Animate On Scroll (AOS)](https://github.com/michalsnik/aos)
 * [Font-Awesome](https://fontawesome.com/)
 
